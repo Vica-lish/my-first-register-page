@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Create Account</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='stely.css'>
+    <script src='register.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <p>please fill this to create an account.</p>
+        <form>
+
+            <div class="form-control">
+                <label class="costom-field">
+                    <input id="fullName" type="text" required>
+                   <span class="placeholder">Full Name</span>
+                </label>
+
+
+                <p class="text-style" id="moreThan"></p>
+            </div>
+            <div class="form-control">
+                <label class="costom-field">
+                    <input id="howLong" type="password" required>
+                    <span class="placeholder">Password</span>
+                </label>
+
+
+                <p class="text-style" id="changPass">Password should be between 6-8 characters</p>
+            </div>
+            <div class="form-control">
+                <label class="costom-field">
+                    <input id="same" type="password" required>
+                    <span class="placeholder">Password</span>
+                </label>
+
+
+                <p class="text-style" id="notTheSame">Repeat password</p>
+            </div>
+            <div class="form-control">
+                <label class="costom-field">
+                    <input id="atSign" type="text" required>
+                    <span class="placeholder">Email</span>
+                </label>
+
+
+                <p class="text-style" id="changMail"></p>
+            </div>
+        </form>
+        <div id="flex">
+            <input type="checkbox">
+            <p id="agree-to-p">By creating an account<br>you agree to our<a href=""> terms & privacy.</a></p>
+        </div>
+        <div>
+            <button onclick="userName()">Join  Now</button>
+        </div>
+        <p id="last-p">Already have an account?<a href=""> sing in.</a></p>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
